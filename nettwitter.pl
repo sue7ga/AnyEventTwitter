@@ -33,7 +33,6 @@ foreach my $mention(@$res){
   #print Encode::encode_utf8($mention_text),"\n"; 
   #print Encode::encode_utf8($screen_name),"\n"; 
   #print $userid,"\n";
-
 }
 
 my $status = $nt->friends_timeline({count => 10});
@@ -42,6 +41,8 @@ foreach my $status(@$status){
   print $status->{user}{screen_name},"\n";
   print Encode::encode_utf8($status->{text}),"\n";
 }
+
+
 
 
 
